@@ -85,6 +85,12 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
+.img_p_height_w 
+{
+  height: 80px;
+  width: 80px;
+}
+
 .color_bck {
   color: white;
   font-weight: 900;
@@ -233,11 +239,8 @@ body {
 }
 
 .bg_footer {
-  /* background-color: #14141F !important; */
-  background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(/img/waves.jpg);
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #283747;
+  border-top: 1px solid #86B817;
   height: auto;
   background-attachment: fixed;
 }
@@ -272,10 +275,94 @@ body {
 
 .button_position_whats
 {
-  position: absolute;
+  position: fixed;
   z-index: 100;
-  bottom: 0px;
-  right: 0px;
+  bottom: 15px;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+  background-color: #86B817 !important;
+  border: 1px solid #86B817;
+  padding-top: 12px;
+}
+
+.button_position_whats12
+{
+  position: fixed;
+  z-index: 100;
+  bottom: 90px;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+  background-color: #86B817 !important;
+  border: 1px solid #86B817;
+  padding-top: 12px;
+}
+
+.border_new_sch
+{
+  border: 1px solid #86B817 !important;
+  color: white !important;
+  background-color: #517404 !important;
+}
+
+.overflow_stop
+{
+  overflow-x: hidden !important;
+}
+
+.text_whatsapp
+{
+  color: white;
+  font-size: 34px;
+}
+
+.small_dubai
+{
+  font-size: 14px;
+  color: white;
+}
+
+.background_white_t
+{
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: 1px solid #86B817 !important;
+}
+
+.background_white_t .color_d_font
+{
+  color: black;
+}
+
+.background_white_t::after
+{
+  color: white !important;
+}
+
+.background_white_t::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  font-size: 12px;
+  margin-left: 5px; /* Adjust spacing */
+  color: white; /* Set the arrow color */
+}
+.d_flex_flag
+{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.width_flag
+{
+  width: 10%;
+}
+
+.backgroundcopyfooter
+{
+  background-color: #86B817;
+  color: black;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 850px) {
@@ -328,6 +415,19 @@ body {
 .margin-top_custom
 {
   margin-top: 0%;
+}
+.d_flex_flag
+{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.width_flag
+{
+  width: 100%;
+  margin-top: 5%;
 }
 
 }
