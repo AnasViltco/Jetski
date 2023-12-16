@@ -277,7 +277,7 @@ body {
 {
   position: fixed;
   z-index: 100;
-  bottom: 15px;
+  bottom: 30px;
   right: 15px;
   height: 60px;
   width: 60px;
@@ -290,7 +290,7 @@ body {
 {
   position: fixed;
   z-index: 100;
-  bottom: 90px;
+  bottom: 100px;
   right: 15px;
   height: 60px;
   width: 60px;
@@ -362,7 +362,23 @@ body {
 {
   background-color: #86B817;
   color: black;
-  font-weight: 600;
+}
+
+.padding_left_new
+{
+  padding-left: 16%;
+  letter-spacing: 5px;
+}
+
+.margin_bottom_neg_header
+{
+  margin-bottom: -7px;
+}
+
+.form-select 
+{
+ color: white !important;
+ --bs-form-select-bg-img: url(/img/downaa.png) !important;
 }
 
 @media screen and (max-width: 850px) {

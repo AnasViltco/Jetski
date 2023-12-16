@@ -201,10 +201,10 @@ export default function Home() {
             </div>
             <div className='col-md-12 menu_mob py-md-2 px-md-3'>
               <div className='row bg-white py-2 px-3 '>
-                <div className='col-md-6 col-6 m-auto'>
-                  <h1 className='text-green m-0 p-0'><b> Tourist</b></h1>
+                <div className='col-md-6 col-10 m-auto'>
+                  <h1 className='text-green'>Sun And Sea <br /><span className='small_dubai text-green m-0 p-0'>Jetski Dubai</span></h1>
                 </div>
-                <div className='col-md-6 col-6 text-end'>
+                <div className='col-md-6 col-2 text-end'>
                   <button className='btn btn-success button_green'><AiOutlineMenu /></button>
                 </div>
               </div>
@@ -224,9 +224,9 @@ export default function Home() {
                 </div>
                 <div className='col-md-4 text-end'>
                   <span><button className='btn btn-outline-light btn-sm rounded-circle'><FaFacebookF /></button></span>
-                  <span><button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaInstagram /></button></span>
-                  <span><button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaYoutube /></button></span>
-                  <span><button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaXTwitter /></button></span>
+                  <span><button className='btn btn-outline-light btn-sm ms-md-3 rounded-circle'><FaInstagram /></button></span>
+                  {/* <span><button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaYoutube /></button></span>
+                  <span><button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaXTwitter /></button></span> */}
                 </div>
               </div>
             </div>
@@ -247,8 +247,9 @@ export default function Home() {
               <div className='col-md-12 position_new pt-2'>
                 <div className='col-md-12 header_2 px-4'>
                   <div className='row'>
-                    <div className='col-md-5'>
-                      <h1 className='text-green'>Sun And Sea <span className='small_dubai'>Jetski Dubai</span></h1>
+                    <div className='col-md-5 pb-3'>
+                      <h1 className='text-green margin_bottom_neg_header'>Sun And Sea </h1>
+                      <small className='padding_left_new'><span className='small_dubai '>Jetski Dubai</span></small>
                     </div>
                     <div className='col-md-7 pt-2'>
                       <div className='col-md-12 flex_using_head_j'>
@@ -336,7 +337,7 @@ export default function Home() {
                 <div className='col-md-12  pb-3 pt-2'>
                   <div className='col-md-12 text-center padding_custom_top'>
                     <h1 className='color_white_new'>Enjoy Your Vacations With Us</h1>
-                    <p className="fs-4 text-white mb-4 animated slideInDown mt-3">Ride the Waves, Embrace the Thrills: Your Ultimate <span className='text-green'>Jet Ski</span> Adventure Awaits!</p>
+                    <p className="fs-4 text-white mb-4 animated slideInDown mt-3">Ride the Waves, Embrace the Thrills: Your Ultimate <span className='text-green'>Jetski</span> Adventure Awaits!</p>
                   </div>
 
                 </div>
@@ -557,7 +558,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' />  9am to 1pm</small>
+                              <small><FaClock className='text-green' />  9am - sunset</small>
                             </div>
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
@@ -600,7 +601,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' />  9am to 1pm</small>
+                              <small><FaClock className='text-green' />  9am - sunset</small>
                             </div>
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
@@ -611,7 +612,7 @@ export default function Home() {
                         </div>
                       </div>
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>From</small> 450<span className='font_size_small_from'> AED</span> </h3>
+                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>From</small> 500<span className='font_size_small_from'> AED</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -643,7 +644,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' />  9am to 1pm</small>
+                              <small><FaClock className='text-green' />  9am - sunset</small>
                             </div>
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
@@ -654,7 +655,7 @@ export default function Home() {
                         </div>
                       </div>
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>From</small> 900 <span className='font_size_small_from'> AED</span> </h3>
+                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>From</small> 1000 <span className='font_size_small_from'> AED</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -674,7 +675,7 @@ export default function Home() {
                 <div className='col-md-4 mt-md-0 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/ski4.jpg' />
+                      <img className='img-fluid img_border_topr' src='/img/fam.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -717,7 +718,7 @@ export default function Home() {
                 <div className='col-md-4 mt-md-0 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/ski5.jpg' />
+                      <img className='img-fluid img_border_topr' src='/img/fam3.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -939,76 +940,83 @@ export default function Home() {
               </Element>
             </div>
             <div className='col-md-12 padding_left_right_custom mt-5 mb-5 pb-4'>
-              <button className='btn btn-outline-success border_new_sch w-100'>
-                <div className='row'>
-                  <div className='col-6 text-start'>
-                    Monday
-                  </div>
-                  <div className='col-6 text-end'>
-                    8:00 am - 5:30 pm
-                  </div>
+              <div className='row'>
+                <div className='col-md-6'>
+                  <button className='btn btn-outline-success border_new_sch w-100'>
+                    <div className='row'>
+                      <div className='col-6 text-start'>
+                        Monday
+                      </div>
+                      <div className='col-6 text-end'>
+                        9:00 am - sunset
+                      </div>
+                    </div>
+                  </button>
+                  <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
+                    <div className='row'>
+                      <div className='col-6 text-start'>
+                        Tuesday
+                      </div>
+                      <div className='col-6 text-end'>
+                        9:00 am - sunset
+                      </div>
+                    </div>
+                  </button>
+                  <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
+                    <div className='row'>
+                      <div className='col-6 text-start'>
+                        Wednesday
+                      </div>
+                      <div className='col-6 text-end'>
+                        9:00 am - sunset
+                      </div>
+                    </div>
+                  </button>
+                  <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
+                    <div className='row'>
+                      <div className='col-6 text-start'>
+                        Thursday
+                      </div>
+                      <div className='col-6 text-end'>
+                        9:00 am - sunset
+                      </div>
+                    </div>
+                  </button>
+                  <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
+                    <div className='row'>
+                      <div className='col-6 text-start'>
+                        Friday
+                      </div>
+                      <div className='col-6 text-end'>
+                        9:00 am - sunset
+                      </div>
+                    </div>
+                  </button>
+                  <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
+                    <div className='row'>
+                      <div className='col-6 text-start'>
+                        Saturday
+                      </div>
+                      <div className='col-6 text-end'>
+                        9:00 am - sunset
+                      </div>
+                    </div>
+                  </button>
+                  <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
+                    <div className='row'>
+                      <div className='col-6 text-start'>
+                        Sunday
+                      </div>
+                      <div className='col-6 text-end'>
+                        9:00 am - sunset
+                      </div>
+                    </div>
+                  </button>
                 </div>
-              </button>
-              <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
-                <div className='row'>
-                  <div className='col-6 text-start'>
-                    Tuesday
-                  </div>
-                  <div className='col-6 text-end'>
-                    8:00 am - 5:30 pm
-                  </div>
+                <div className='col-md-6 m-auto'>
+                  <img className='img-fluid' src='/img/sch.jpeg' />
                 </div>
-              </button>
-              <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
-                <div className='row'>
-                  <div className='col-6 text-start'>
-                    Wednesday
-                  </div>
-                  <div className='col-6 text-end'>
-                    8:00 am - 5:30 pm
-                  </div>
-                </div>
-              </button>
-              <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
-                <div className='row'>
-                  <div className='col-6 text-start'>
-                    Thursday
-                  </div>
-                  <div className='col-6 text-end'>
-                    8:00 am - 5:30 pm
-                  </div>
-                </div>
-              </button>
-              <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
-                <div className='row'>
-                  <div className='col-6 text-start'>
-                    Friday
-                  </div>
-                  <div className='col-6 text-end'>
-                    8:00 am - 5:30 pm
-                  </div>
-                </div>
-              </button>
-              <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
-                <div className='row'>
-                  <div className='col-6 text-start'>
-                    Saturday
-                  </div>
-                  <div className='col-6 text-end'>
-                    8:00 am - 5:30 pm
-                  </div>
-                </div>
-              </button>
-              <button className='btn btn-outline-success border_new_sch mt-4 w-100'>
-                <div className='row'>
-                  <div className='col-6 text-start'>
-                    Sunday
-                  </div>
-                  <div className='col-6 text-end'>
-                    8:00 am - 5:30 pm
-                  </div>
-                </div>
-              </button>
+              </div>
             </div>
             <div className='col-md-12 text-center'>
               <Element name="test5">
@@ -1136,14 +1144,12 @@ export default function Home() {
               <div className='col-md-12 background_new_2 mt-5 px-md-5 px-3 py-5'>
                 <div className='row'>
                   <div className='col-md-6 u_font'>
-                    <h6 className='text-white'><b>Booking</b></h6>
                     <h1 className='text-white'><b>Online Booking</b></h1>
-                    <p className='text-white'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    <p className='text-white'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
-                      empor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit
+                    <p className='text-white'>
+                      Experience the thrill of the open water with our state-of-the-art jet skis, perfectly suited for riders of all levels. Conveniently situated on [Beach Name], we provide a seamless online booking experience. Select your preferred date, choose from our flexible rental packages, and personalize your adventure with optional extras like safety gear and guided tours. Our commitment to safety means you'll receive a comprehensive briefing from our experienced staff. Once booked, you'll receive a confirmation email with all the details you need for a fantastic day on the waves. At Sun and Sea jetski dubai, we prioritize your enjoyment and safety, ensuring an unforgettable jet skiing experience.
                     </p>
-                    <p className='text-white'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
-                      empor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit
+                    <p className='text-white'>
+                      Secure your jet ski rental by completing the easy online payment process, accepting all major credit cards. Whether you're seeking a quick joyride or a full-day excursion, we have the perfect package for you.
                     </p>
                   </div>
                   <div className='col-md-6 u_font'>
@@ -1180,10 +1186,9 @@ export default function Home() {
                   <div className='col-md-12'>
                     <h4 className='text-white'><b>Company</b></h4>
                     <h6 className='text-white'><FaAngleRight />About Us</h6>
-                    <h6 className='text-white'> <FaAngleRight />Our Services</h6>
-                    <h6 className='text-white'> <FaAngleRight />Our Gallery</h6>
+                    <h6 className='text-white'> <FaAngleRight />Gallery</h6>
                     <h6 className='text-white'> <FaAngleRight />Awesome Packages</h6>
-                    <h6 className='text-white'> <FaAngleRight />3 easy steps</h6>
+                    <h6 className='text-white'> <FaAngleRight />Testimonials</h6>
                   </div>
 
                 </div>
@@ -1200,8 +1205,8 @@ export default function Home() {
 
               </div>
             </div>
-            <div className='col-md-12 text-center py-2 backgroundcopyfooter'>
-              Copyrights &copy; reserved by Ztexsolutions 2024
+            <div className='col-md-12 text-center backgroundcopyfooter'>
+              Copyrights &copy; reserved by Zpexsolutions 2024
             </div>
           </div>
         </div>
