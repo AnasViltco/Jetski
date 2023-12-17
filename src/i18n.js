@@ -1,12 +1,12 @@
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import enTranslation from '../../public/locales/en/translation.json';
-import arTranslation from '../../public/locales/ar/translation.json';
-import frTranslation from '../../public/locales/fr/translation.json';
-import itTranslation from '../../public/locales/it/translation.json';
-import ruTranslation from '../../public/locales/ru/translation.json';
-import chTranslation from '../../public/locales/ch/translation.json';
+import enTranslation from '../public/locales/en/translation.json';
+import arTranslation from '../public/locales/ar/translation.json';
+import frTranslation from '../public/locales/fr/translation.json';
+import itTranslation from '../public/locales/it/translation.json';
+import ruTranslation from '../public/locales/ru/translation.json';
+import chTranslation from '../public/locales/ch/translation.json';
 
 const resources = {
   en: { translation: enTranslation },
