@@ -18,8 +18,8 @@ const resources = {
 };
 
 i18n
-  .use(initReactI18next)
-  .init({
+  ?.use(initReactI18next)
+  ?.init({
     resources,
     lng: 'en', // Default language
     fallbackLng: 'en',

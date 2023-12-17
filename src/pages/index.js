@@ -13,7 +13,6 @@ import "react-multi-carousel/lib/styles.css";
 import { useEffect, useState } from 'react';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
-import { i18n } from '../../next-i18next.config';
 
 const inter = Inter({ subsets: ['latin'] })
 
