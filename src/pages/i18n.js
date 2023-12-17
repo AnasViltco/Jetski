@@ -1,4 +1,4 @@
-import i18n from 'i18next';
+import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import enTranslation from '../../public/locales/en/translation.json';
@@ -17,7 +17,7 @@ const resources = {
   ch: { translation: chTranslation },
 };
 
-i18n
+i18next
   ?.use(initReactI18next)
   ?.init({
     resources,
@@ -28,4 +28,4 @@ i18n
     },
   });
 
-export default i18n;
+export default i18next;
