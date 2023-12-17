@@ -378,7 +378,7 @@ body {
 .form-select 
 {
  color: white !important;
- --bs-form-select-bg-img: url(/img/downaa.png) !important;
+ --bs-form-select-bg-img: url("/img/downaa.png") !important;
 }
 
 @media screen and (max-width: 850px) {
