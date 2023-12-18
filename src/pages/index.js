@@ -19,8 +19,13 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const [isFlagSet, setIsFlagSet] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [Openmenu, setOpenmenu] = useState(false);
   const { t } = useTranslation();
   const { i18n } = useTranslation();
+
+  const openclosemenu = () => {
+    setOpenmenu(!Openmenu)
+  }
 
   const handleLanguageChange = (event) => {
     const selectedLanguage = event.target.value;
@@ -78,6 +83,7 @@ export default function Home() {
   };
 
   const scrollTo = () => {
+    
     scroll.scrollTo('test2', {
       spy: true,
       smooth: true,
@@ -233,16 +239,151 @@ export default function Home() {
                   </a>}
               </Link>
             </div>
+
+
+
+            {/* Menu mobile ----------------------------------------------------------------------------------- */}
+            <div className='col-md-12 background_header1 menu_mob py-2 px-2'>
+              <div className='row'>
+                <div className='col-md-6 col-6'></div>
+                <div className='col-md-6 col-6'>
+                  <select
+                    className="form-select form-select-sm rounded-pill background_white_t"
+                    aria-label="Select Language"
+                    onChange={handleLanguageChange}
+                  >
+                    <option className='color_d_font'>Select Language</option>
+                    <option className='color_d_font' value={1}>English</option>
+                    <option className='color_d_font' value={2}>Arabic</option>
+                    <option className='color_d_font' value={3}>French</option>
+                    <option className='color_d_font' value={4}>Italian</option>
+                    <option className='color_d_font' value={5}>Russian</option>
+                    <option className='color_d_font' value={6}>Chinese</option>
+                  </select>
+                </div>
+              </div>
+
+            </div>
             <div className='col-md-12 menu_mob py-md-2 px-md-3'>
               <div className='row bg-white py-2 px-3 '>
                 <div className='col-md-6 col-10 m-auto'>
-                  <h1 className='text-green'>{t("logo_pc")} <br /><span className='small_dubai text-green m-0 p-0'>{t("logo_pc_1")}</span></h1>
+                  <h1 className='text-green margin_bottom_neg_header'>{t("logo_pc")}</h1>
+                  <small className='padding_left_new'><span className='small_dubai text-green '> {t("logo_pc_1")} </span></small>
                 </div>
                 <div className='col-md-6 col-2 text-end'>
-                  <button className='btn btn-success button_green'><AiOutlineMenu /></button>
+                  <button className='btn btn-success button_green' onClick={openclosemenu} ><AiOutlineMenu /></button>
                 </div>
               </div>
             </div>
+
+            {Openmenu ?
+              <div className='col-md-12 bg-white position_of_div '>
+                <div className='col-md-12 px-4 py-3'>
+                  <div className='row'>
+                    <div className='col-md-6 col-6'>
+                      <p className='m-0 p-0 color_text_mob_header'><b>Home</b></p>
+                    </div>
+                    <div className='col-md-6 col-6 text-end'><FaAngleRight className='text-green' /></div>
+                  </div>
+                </div>
+                <hr className='m-0 p-0 background_line' />
+                <div className='col-md-12 px-4 py-3'>
+                  <div className='row'>
+                    <div className='col-md-6 col-6' >
+                      <Link
+                        activeClass="active"
+                        to="test2"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        onClick={scrollTo}
+                      >
+                        <p className='m-0 p-0 color_text_mob_header' onClick={openclosemenu} ><b>AboutUs</b></p>
+                      </Link>
+                    </div>
+                    <div className='col-md-6 col-6 text-end'><FaAngleRight className='text-green' /></div>
+                  </div>
+                </div>
+                <hr className='m-0 p-0 background_line' />
+                <div className='col-md-12 px-4 py-3'>
+                  <div className='row'>
+                    <div className='col-md-6 col-6'>
+                      <Link
+                        activeClass="active"
+                        to="test3"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        onClick={scrollTo}
+                      >
+                        <p className='m-0 p-0 color_text_mob_header' onClick={openclosemenu}><b>Gallery</b></p>
+                      </Link>
+                    </div>
+                    <div className='col-md-6 col-6 text-end'><FaAngleRight className='text-green' /></div>
+                  </div>
+                </div>
+                <hr className='m-0 p-0 background_line' />
+                <div className='col-md-12 px-4 py-3'>
+                  <div className='row'>
+                    <div className='col-md-6 col-6'>
+                      <Link
+                        activeClass="active"
+                        to="test4"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        onClick={scrollTo}
+                      >
+                        <p className='m-0 p-0 color_text_mob_header' onClick={openclosemenu}><b>Packages</b></p>
+                      </Link>
+                    </div>
+                    <div className='col-md-6 col-6 text-end'><FaAngleRight className='text-green' /></div>
+                  </div>
+                </div>
+                <hr className='m-0 p-0 background_line' />
+                <div className='col-md-12 px-4 py-3'>
+                  <div className='row'>
+                    <div className='col-md-6 col-6'>
+                      <Link
+                        activeClass="active"
+                        to="test5"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        onClick={scrollTo}
+                      >
+                        <p className='m-0 p-0 color_text_mob_header' onClick={openclosemenu}><b>Testimonials</b></p>
+                      </Link>
+                    </div>
+                    <div className='col-md-6 col-6 text-end'><FaAngleRight className='text-green' /></div>
+                  </div>
+                </div>
+                <hr className='m-0 p-0 background_line' />
+                <div className='col-md-12 px-4 py-3'>
+                  <div className='row'>
+                    <div className='col-md-6 col-6'>
+                      <Link
+                        activeClass="active"
+                        to="test6"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        onClick={scrollTo}
+                      >
+                        <p className='m-0 p-0 color_text_mob_header' onClick={openclosemenu}><b>ContactUs</b></p>
+                      </Link>
+                    </div>
+                    <div className='col-md-6 col-6 text-end'><FaAngleRight className='text-green' /></div>
+                  </div>
+                </div>
+              </div>
+              : null
+            }
 
             {/* Header one ---------------------------------------------------------- */}
             <div className='col-md-12 background_header1 px-4 py-2'>
@@ -278,7 +419,7 @@ export default function Home() {
                 </video>
               </div>
               <div className='col-md-12 position_new pt-2'>
-                <div className='col-md-12 header_2 px-4'>
+                <div className='col-md-12 header_2 display_pc px-4'>
                   <div className='row'>
                     <div className='col-md-5 pb-3'>
                       <h1 className='text-green margin_bottom_neg_header'>{t("logo_pc")}</h1>
@@ -296,7 +437,8 @@ export default function Home() {
                             offset={50}
                             duration={500}
                             onClick={scrollTo}
-                          >{t("nav2")}
+                          >
+                            {t("nav2")}
                           </Link>
                         </p>
                         <p className='font_set_new mt-2'>
