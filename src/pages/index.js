@@ -14,6 +14,7 @@ import { useEffect, useState } from 'react';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

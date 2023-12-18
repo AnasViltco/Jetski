@@ -358,7 +358,8 @@ body {
 
 .form-select {
   color: white !important;
-  --bs-form-select-bg-img: url("/img/downaa.png") !important;
+  background-image: url(/img/downaa.png) !important;
+  
 }
 
 .display_mob {
