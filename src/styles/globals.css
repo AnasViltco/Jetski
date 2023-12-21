@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   color: white;
   overflow-x: hidden !important;
-  background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(/img/waves.jpg);
+  background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(/img/waves.webp);
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,7 @@ body {
 }
 
 .hero-header {
-  background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(/img/bg-hero.jpg);
+  background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(/img/bg-hero.webp);
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -212,7 +212,7 @@ body {
 }
 
 .background_new_2 {
-  background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(/img/booking.jpg);
+  background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(/img/booking.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,6 +222,7 @@ body {
 .input_deign {
   background-color: #14141f00 !important;
   border-radius: 0px !important;
+  color: gray !important;
 }
 
 .input_deign::placeholder {
@@ -349,7 +350,7 @@ body {
 
 .padding_left_new {
   padding-left: 16%;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
 }
 
 .margin_bottom_neg_header {
@@ -358,7 +359,7 @@ body {
 
 .form-select {
   color: white !important;
-  background-image: url(/img/downaa.png) !important;
+  background-image: url(/img/downaa.webp) !important;
   
 }
 
@@ -366,9 +367,21 @@ body {
   display: none;
 }
 
+.img_width_one
+{
+  width: 120%;
+}
+
+.height_w_img
+{
+  height: 270px !important;
+  width: 100%;
+  object-fit: cover;
+}
 
 
 @media screen and (max-width: 850px) {
+  
   .display_pc {
     display: none;
   }
@@ -390,7 +403,7 @@ body {
   }
 
   .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(/img/bg-hero.jpg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(/img/bg-hero.webp);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -403,8 +416,8 @@ body {
   }
 
   .padding_left_right_custom {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 
   .img_width_set {

@@ -24,6 +24,48 @@ export default function Home() {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
 
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    date: '',
+    destination: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Formspree endpoint
+    const formSpreeEndpoint = 'https://formspree.io/f/xgegwlwn';
+
+    // Send data to Formspree
+    const response = await fetch(formSpreeEndpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    // Handle the response (optional)
+    const result = await response.json();
+    console.log(result);
+
+    // Clear the form after submission
+    setFormData({
+      name: '',
+      email: '',
+      date: '',
+      destination: '',
+      message: '',
+    });
+  };
+
   const openclosemenu = () => {
     setOpenmenu(!Openmenu)
   }
@@ -84,7 +126,7 @@ export default function Home() {
   };
 
   const scrollTo = () => {
-    
+
     scroll.scrollTo('test2', {
       spy: true,
       smooth: true,
@@ -300,7 +342,7 @@ export default function Home() {
                         duration={500}
                         onClick={scrollTo}
                       >
-                        <p className='m-0 p-0 color_text_mob_header' onClick={openclosemenu} ><b>AboutUs</b></p>
+                        <p className='m-0 p-0 color_text_mob_header' onClick={openclosemenu} ><b>About us</b></p>
                       </Link>
                     </div>
                     <div className='col-md-6 col-6 text-end'><FaAngleRight className='text-green' /></div>
@@ -376,7 +418,7 @@ export default function Home() {
                         duration={500}
                         onClick={scrollTo}
                       >
-                        <p className='m-0 p-0 color_text_mob_header' onClick={openclosemenu}><b>ContactUs</b></p>
+                        <p className='m-0 p-0 color_text_mob_header' onClick={openclosemenu}><b>Contact us</b></p>
                       </Link>
                     </div>
                     <div className='col-md-6 col-6 text-end'><FaAngleRight className='text-green' /></div>
@@ -398,10 +440,22 @@ export default function Home() {
                   </div>
                 </div>
                 <div className='col-md-4 text-end'>
-                  <span><button className='btn btn-outline-light btn-sm rounded-circle'><FaFacebookF /></button></span>
-                  <span><button className='btn btn-outline-light btn-sm ms-md-3 rounded-circle'><FaInstagram /></button></span>
-                  {/* <span><button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaYoutube /></button></span>
-                  <span><button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaXTwitter /></button></span> */}
+                  <span>
+                    <a href='https://www.facebook.com/profile.php?viewas=100000686899395&id=61554693967567' target='_blank'>
+                      <button className='btn btn-outline-light btn-sm rounded-circle'><FaFacebookF /></button>
+                    </a>
+                  </span>
+                  <span>
+                    <a href='https://www.instagram.com/sunandsea_jetski_dubai/?igshid=YzVkODRmOTdmMw%3D%3D' target='_blank'>
+                      <button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaInstagram /></button>
+                    </a>
+                  </span>
+                  <span>
+                    <a href='https://www.youtube.com/@sunandsea_jetski_dubai' target='_blank'>
+                      <button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaYoutube /></button>
+                    </a>
+                  </span>
+                  {/* <span><button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaXTwitter /></button></span> */}
                 </div>
               </div>
             </div>
@@ -419,15 +473,23 @@ export default function Home() {
                   />
                 </video>
               </div>
-              <div className='col-md-12 position_new pt-2'>
+              <div className='col-md-12 position_new '>
                 <div className='col-md-12 header_2 display_pc px-4'>
                   <div className='row'>
-                    <div className='col-md-5 pb-3'>
-                      <h1 className='text-green margin_bottom_neg_header'>{t("logo_pc")}</h1>
-                      <small className='padding_left_new'><span className='small_dubai '> {t("logo_pc_1")} </span></small>
+                    <div className='col-md-5 pb-2'>
+                      <div className='row'>
+                        <div className='col-md-2 pe-0 pt-1 '>
+                          <img className='img-fluid img_width_one' src='/img/logo.webp' />
+                        </div>
+                        <div className='col-md-10 pt-3'>
+                          <h1 className='text-green margin_bottom_neg_header'>{t("logo_pc")}</h1>
+                          <small className='padding_left_new'><span className='small_dubai '> {t("logo_pc_1")} </span></small>
+                        </div>
+                      </div>
+
                     </div>
-                    <div className='col-md-7 pt-2'>
-                      <div className='col-md-12 flex_using_head_j'>
+                    <div className='col-md-7  pt-4'>
+                      <div className='col-md-12 flex_using_head_j pt-2'>
                         <p className='font_set_new mt-2'>{t("nav1")}</p>
                         <p className='font_set_new mt-2'>
                           <Link
@@ -529,7 +591,7 @@ export default function Home() {
               <Element name="test2">
                 <div className='row'>
                   <div className='col-md-6 mt-md-0 mt-4'>
-                    <img class="img-fluid img_width_set" src="/img/new.jpeg" />
+                    <img class="img-fluid img_width_set" src="/img/new.webp" />
                   </div>
                   <div className='col-md-6 mt-4 m-md-auto'>
                     <h1 className='section_1_t'><b>{t("About1")}</b></h1>
@@ -539,23 +601,7 @@ export default function Home() {
                     <p>
                       {t("para2_about")}
                     </p>
-                    {/* <div className='row'>
-                <div className='col-md-6'>
-                  <p className='mb-1' ><FaArrowRight className='text-green' />&nbsp; First Class Flights</p>
-                  <p className='mb-1'  ><FaArrowRight className='text-green' />&nbsp; First Class Flights</p>
-                  <p className='mb-1' ><FaArrowRight className='text-green' />&nbsp; First Class Flights</p>
-                  <p className='mb-1'  ><FaArrowRight className='text-green' />&nbsp; First Class Flights</p>
-                </div>
-                <div className='col-md-6'>
-                  <p className='mb-1' ><FaArrowRight className='text-green' />&nbsp; First Class Flights</p>
-                  <p className='mb-1'  ><FaArrowRight className='text-green' />&nbsp; First Class Flights</p>
-                  <p className='mb-1' ><FaArrowRight className='text-green' />&nbsp; First Class Flights</p>
-                  <p className='mb-1'  ><FaArrowRight className='text-green' />&nbsp; First Class Flights</p>
-                </div>
-              </div> */}
-                    {/* <div className='btn btn-success button_green px-5 py-3 mt-md-1 mt-3'>
-                Read More
-              </div> */}
+                   
                   </div>
                 </div>
               </Element>
@@ -574,77 +620,102 @@ export default function Home() {
                 autoPlaySpeed={2000}>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g2.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g2.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g3.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g3.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g5.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g5.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g7.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g7.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g16.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g16.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g9.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g9.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g17.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g17.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g11.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g11.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g18.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g18.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g13.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g13.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g14.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g14.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g15.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g15.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g8.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g8.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g10.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g10.webp' />
                   </div>
                 </div>
                 <div className='px-3'>
                   <div className='col-md-12'>
-                    <img className='img-fluid img_border_rad' src='/img/g12.jpeg' />
+                    <img className='img-fluid img_border_rad' src='/img/g12.webp' />
+                  </div>
+                </div>
+                <div className='px-3'>
+                  <div className='col-md-12'>
+                    <img className='img-fluid img_border_rad' src='/img/g21.webp' />
+                  </div>
+                </div>
+                <div className='px-3'>
+                  <div className='col-md-12'>
+                    <img className='img-fluid img_border_rad' src='/img/g22.webp' />
+                  </div>
+                </div>
+                <div className='px-3'>
+                  <div className='col-md-12'>
+                    <img className='img-fluid img_border_rad' src='/img/g23.webp' />
+                  </div>
+                </div>
+                <div className='px-3'>
+                  <div className='col-md-12'>
+                    <img className='img-fluid img_border_rad' src='/img/g24.webp' />
+                  </div>
+                </div>
+                <div className='px-3'>
+                  <div className='col-md-12'>
+                    <img className='img-fluid img_border_rad' src='/img/g25.webp' />
                   </div>
                 </div>
 
@@ -658,10 +729,10 @@ export default function Home() {
             </div>
             <div className='col-md-12  mt-5 mb-5 pb-4 padding_left_right_custom'>
               <div className='row'>
-                <div className='col-md-4 mt-md-0 '>
+                <div className='col-md-4 mt-md-0  '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/ski.jpg' />
+                      <img className='img-fluid img_border_topr' src='/img/ski.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -701,10 +772,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 '>
+                <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/ski2.jpg' />
+                      <img className='img-fluid img_border_topr' src='/img/ski2.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -744,10 +815,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 '>
+                <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/ski3.jpg' />
+                      <img className='img-fluid img_border_topr' src='/img/ski3.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -787,15 +858,15 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 '>
+                <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/fam.jpeg' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/d1.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
-                          <div className='col-md-4 bprder_new py-1'>
+                          <div className='col-md-4 bprder_new py-1 '>
                             <div className='col-md-12 text-center'>
                               <small><IoLocationSharp className='text-green' />  {t("Loc")}</small>
                             </div>
@@ -807,13 +878,13 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><GiDuration className='text-green' />{t("min30")}</small>
+                              <small><GiDuration className='text-green' />4 hours</small>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300 <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 1600 <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -824,16 +895,16 @@ export default function Home() {
                       </div>
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
-                          {t("p7_des")}
+                          {t("p14_des")}
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 '>
+                <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/fam3.jpeg' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/d2.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -850,7 +921,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><GiDuration className='text-green' />{t("min60")} </small>
+                              <small><GiDuration className='text-green' />{t("min")} </small>
                             </div>
                           </div>
                         </div>
@@ -867,16 +938,16 @@ export default function Home() {
                       </div>
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
-                          {t("p8_des")}
+                          {t("p15_des")} <br /> {t("p16_des")}
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 '>
+                <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/ski6.jpg' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/d3.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -893,13 +964,13 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><GiDuration className='text-green' />{t("min120")} </small>
+                              <small><GiDuration className='text-green' />{t("min")} </small>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>From</small> 1000  <span className='font_size_small_from'> AED</span> </h3>
+                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 600  <span className='font_size_small_from'>  {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -910,16 +981,16 @@ export default function Home() {
                       </div>
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
-                          {t("p9_des")}
+                          {t("p17_des")}
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 '>
+                <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/skicar.jpeg' />
+                      <img className='img-fluid img_border_topr' src='/img/skicar.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -959,10 +1030,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 '>
+                <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/skicar.jpeg' />
+                      <img className='img-fluid img_border_topr' src='/img/skicar.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -1002,10 +1073,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 '>
+                <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/fly.jpg' />
+                      <img className='img-fluid img_border_topr' src='/img/fly.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -1054,7 +1125,7 @@ export default function Home() {
                 <h1 className='section_1_t'><b>{t("Schedule")}</b></h1>
               </Element>
             </div>
-            <div className='col-md-12 padding_left_right_custom mt-5 mb-5 pb-4'>
+            <div className='col-md-12 padding_left_right_custom mt-5 mb-5 pb-4 '>
               <div className='row'>
                 <div className='col-md-6'>
                   <button className='btn btn-outline-success border_new_sch w-100'>
@@ -1129,7 +1200,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className='col-md-6 mt-5 m-md-auto'>
-                  <img className='img-fluid' src='/img/sch.jpeg' />
+                  <img className='img-fluid' src='/img/sch.webp' />
                 </div>
               </div>
             </div>
@@ -1146,7 +1217,7 @@ export default function Home() {
                 autoPlaySpeed={2000}>
                 <div className='px-2'>
                   <div className='col-md-12 text-center'>
-                    <img className='img-fluid img_p_height_w m_top_n rounded-circle' src='/img/b1.jpg' />
+                    <img className='img-fluid img_p_height_w m_top_n rounded-circle' src='/img/b1.webp' />
                   </div>
                   <div className='col-md-12 px-2 text-center border_circle'>
                     <p className='mb-0 mt-5 color_bck'>Tom Adamson</p>
@@ -1167,7 +1238,7 @@ export default function Home() {
                 </div>
                 <div className='px-2'>
                   <div className='col-md-12 text-center'>
-                    <img className='img-fluid img_p_height_w m_top_n rounded-circle' src='/img/b3.jpeg' />
+                    <img className='img-fluid img_p_height_w m_top_n rounded-circle' src='/img/b3.webp' />
                   </div>
                   <div className='col-md-12 px-2 text-center border_circle'>
                     <p className='mb-0 mt-5 color_bck'>Rajiv Shah</p>
@@ -1188,7 +1259,7 @@ export default function Home() {
                 </div>
                 <div className='px-2'>
                   <div className='col-md-12 text-center'>
-                    <img className='img-fluid img_p_height_w m_top_n rounded-circle' src='/img/b2.jpeg' />
+                    <img className='img-fluid img_p_height_w m_top_n rounded-circle' src='/img/b2.webp' />
                   </div>
                   <div className='col-md-12 px-2 text-center border_circle'>
                     <p className='mb-0 mt-5 color_bck'>Jeffrey blok</p>
@@ -1209,7 +1280,7 @@ export default function Home() {
                 </div>
                 <div className='px-2'>
                   <div className='col-md-12 text-center'>
-                    <img className='img-fluid img_p_height_w m_top_n rounded-circle' src='/img/b4.jpeg' />
+                    <img className='img-fluid img_p_height_w m_top_n rounded-circle' src='/img/b4.webp' />
                   </div>
                   <div className='col-md-12 px-2 text-center border_circle'>
                     <p className='mb-0 mt-5 color_bck'>Katie Edwards</p>
@@ -1231,20 +1302,23 @@ export default function Home() {
               </Carousel>
             </div>
             <div className='col-md-12 padding_left_right_custom mb-5 pb-4'>
-              <div className='d_flex_flag'>
+              <div className='d_flex_flag px-3 '>
 
-                <img className='img-fluid width_flag' src='/img/uae.jpg' />
-                <img className='img-fluid width_flag' src='/img/pakistan.jpg' />
-                <img className='img-fluid width_flag' src='/img/france.jpg' />
-                <img className='img-fluid width_flag' src='/img/morocco.jpg' />
-                <img className='img-fluid width_flag' src='/img/algeria.jpg' />
-                <img className='img-fluid width_flag' src='/img/tunisia.jpg' />
-                <img className='img-fluid width_flag' src='/img/russia.jpg' />
+                <img className='img-fluid width_flag mt-5' src='/img/uae.webp' />
+                <img className='img-fluid width_flag mt-5' src='/img/pakistan.webp' />
+                <img className='img-fluid width_flag mt-5' src='/img/france.webp' />
+                <img className='img-fluid width_flag mt-5' src='/img/morocco.webp' />
+                <img className='img-fluid width_flag mt-5' src='/img/algeria.webp' />
+                <img className='img-fluid width_flag mt-5' src='/img/tunisia.webp' />
+                <img className='img-fluid width_flag mt-5' src='/img/russia.webp' />
 
               </div>
             </div>
+
             <div className='col-md-12 text-center'>
-              <h1 className='section_1_t'><b>{t("g_map")}</b></h1>
+              <Element name='test9' >
+                <h1 className='section_1_t'><b>{t("g_map")}</b></h1>
+              </Element>
             </div>
             <div className="elfsight-app-3f8bce26-7b34-4501-ade2-16858a93181c" data-elfsight-app-lazy></div>
             <div className='col-md-12 padding_left_right_custom mt-5 mb-5 pb-4'>
@@ -1270,26 +1344,28 @@ export default function Home() {
                   <div className='col-md-6 u_font'>
                     <h1 className='text-white '><b>{t("book_a_tour")}</b></h1>
                     <div className='col-md-12 mt-4'>
-                      <div className='row'>
-                        <div className='col-md-6'>
-                          <input className='form-control input_deign form-control-lg' type='text' placeholder={t("name")} />
+                      <form onSubmit={handleSubmit}>
+                        <div className='row'>
+                          <div className='col-md-6'>
+                            <input required className='form-control input_deign form-control-lg' type='text' name="name" value={formData.name} onChange={handleChange} placeholder={t("name")} />
+                          </div>
+                          <div className='col-md-6 mt-md-0 mt-4'>
+                            <input required className='form-control input_deign form-control-lg' type='text' name="email" value={formData.email} onChange={handleChange} placeholder={t("email")} />
+                          </div>
+                          <div className='col-md-6 mt-4'>
+                            <input required className='form-control input_deign form-control-lg' type='date' name="date" value={formData.date} onChange={handleChange} placeholder={t("date")} />
+                          </div>
+                          <div className='col-md-6 mt-4'>
+                            <input required className='form-control input_deign form-control-lg' type='text' name="destination" value={formData.destination} onChange={handleChange} placeholder={t("destination")} />
+                          </div>
+                          <div className='col-md-12 mt-4'>
+                            <textarea required className='form-control input_deign form-control-lg' name="message" value={formData.message} onChange={handleChange} type='text' placeholder={t("special_request")} ></textarea>
+                          </div>
+                          <div className='col-md-12'>
+                            <button type='submit' className='btn btn-outline-light border_radius_n w-100 mt-4 py-3'> {t("book_now")} </button>
+                          </div>
                         </div>
-                        <div className='col-md-6 mt-md-0 mt-4'>
-                          <input className='form-control input_deign form-control-lg' type='text' placeholder={t("email")} />
-                        </div>
-                        <div className='col-md-6 mt-4'>
-                          <input className='form-control input_deign form-control-lg' type='text' placeholder={t("date")} />
-                        </div>
-                        <div className='col-md-6 mt-4'>
-                          <input className='form-control input_deign form-control-lg' type='text' placeholder={t("destination")} />
-                        </div>
-                        <div className='col-md-12 mt-4'>
-                          <textarea className='form-control input_deign form-control-lg' type='text' placeholder={t("special_request")} ></textarea>
-                        </div>
-                        <div className='col-md-12'>
-                          <button className='btn btn-outline-light border_radius_n w-100 mt-4 py-3'> {t("book_now")} </button>
-                        </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -1300,22 +1376,102 @@ export default function Home() {
                 <div className='col-md-3'>
                   <div className='col-md-12'>
                     <h4 className='text-white'><b>Company</b></h4>
-                    <h6 className='text-white'><FaAngleRight />{t("nav2")}</h6>
-                    <h6 className='text-white'> <FaAngleRight />{t("nav3")}</h6>
-                    <h6 className='text-white'> <FaAngleRight />Awesome Packages</h6>
-                    <h6 className='text-white'> <FaAngleRight />{t("nav5")}</h6>
+                    <Link
+                      activeClass="active"
+                      to="test6"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                      onClick={scrollTo}
+                    >
+                      <h6 className='text-white'><FaAngleRight />{t("nav2")}</h6>
+                    </Link>
+                    <Link
+                      activeClass="active"
+                      to="test3"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                      onClick={scrollTo}
+                    >
+                      <h6 className='text-white'> <FaAngleRight />{t("nav3")}</h6>
+                    </Link>
+                    <Link
+                      activeClass="active"
+                      to="test4"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                      onClick={scrollTo}
+                    >
+                      <h6 className='text-white'> <FaAngleRight />Awesome Packages</h6>
+                    </Link>
+                    <Link
+                      activeClass="active"
+                      to="test5"
+                      spy={true}
+                      smooth={true}
+                      offset={50}
+                      duration={500}
+                      onClick={scrollTo}
+                    >
+                      <h6 className='text-white'> <FaAngleRight />{t("nav5")}</h6>
+                    </Link>
                   </div>
 
                 </div>
                 <div className='col-md-3 mt-md-0 mt-3'>
                   <h4 className='text-white'><b>Contact</b></h4>
-                  <h6 className='text-white'> <FaAngleRight />{t("nav6")}</h6>
-                  <h6 className='text-white'> <FaAngleRight />Customer Reviews</h6>
-                  <h6 className='text-white'> <FaAngleRight />Schedule</h6>
+                  <Link
+                    activeClass="active"
+                    to="test5"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onClick={scrollTo}
+                  >
+                    <h6 className='text-white'> <FaAngleRight />{t("nav6")}</h6>
+                  </Link>
+                  <Link
+                    activeClass="active"
+                    to="test5"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onClick={scrollTo}
+                  >
+                    <h6 className='text-white'> <FaAngleRight />Customer Reviews</h6>
+                  </Link>
+                  <Link
+                    activeClass="active"
+                    to="test7"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onClick={scrollTo}
+                  >
+                    <h6 className='text-white'> <FaAngleRight />Schedule</h6>
+                  </Link>
                 </div>
                 <div className='col-md-3 mt-md-0 mt-3'>
                   <h4 className='text-white'><b>Location</b></h4>
-                  <h6 className='text-white'> <FaAngleRight />Maps</h6>
+                  <Link
+                    activeClass="active"
+                    to="test9"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                    onClick={scrollTo}
+                  >
+                    <h6 className='text-white'> <FaAngleRight />Maps</h6>
+                  </Link>
                 </div>
 
               </div>

@@ -64,8 +64,12 @@
     "name": "votre nom",
     "email": "Votre e-mail",
     "date": "Date et heure",
-    "destination": "Destination",
+    "destination": "Numéro de téléphone",
     "special_request": "demande spéciale",
     "book_now": "Reserve maintenant    ",
-    "copyrights": "Copyrights © réservés par Zpexsolutions 2024"
+    "copyrights": "Copyrights © réservés par Zpexsolutions 2024",
+    "p14_des":"Y compris les rafraîchissements, les boissons gazeuses et tout le matériel de pêche.",
+    "p15_des":"Plongée sous-marine",
+    "p16_des":"expérience",
+    "p17_des":"Expérience de plongée sous-marine à Fujirah, y compris la prise en charge de 600 aed"
 }

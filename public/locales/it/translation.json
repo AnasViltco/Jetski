@@ -64,8 +64,12 @@
     "name":"Il tuo nome",
     "email":"La tua email",
     "date":"Appuntamento",
-    "destination":"Destinazione",
+    "destination":"Numero di telefono",
     "special_request":"richiesta speciale",
     "book_now":"Prenota ora",
-    "copyrights":"Copyright © riservati da Zpexsolutions 2024"
+    "copyrights":"Copyright © riservati da Zpexsolutions 2024",
+    "p14_des":"Incluso rinfresco, bibite analcoliche e tutta l'attrezzatura da pesca.",
+    "p15_des":"Immersioni in subacquea",
+    "p16_des":"esperienza",
+    "p17_des":"Esperienza di immersioni subacquee a Fujirah incluso ritiro e riconsegna 600 aed"
 }

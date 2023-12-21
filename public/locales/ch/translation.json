@@ -64,8 +64,12 @@
     "name": "你的名字",
     "email": "你的邮件",
     "date": "约会时间",
-    "destination": "目的地",
+    "destination": "电话号码",
     "special_request": "特殊要求",
     "book_now": "现在预订",
-    "copyrights": "版权所有 © Zpexsolutions 保留 2024"
+    "copyrights": "版权所有 © Zpexsolutions 保留 2024",
+    "p14_des": "包括茶点、软饮料和所有钓鱼设备。",
+    "p15_des": "水肺潜水",
+    "p16_des": "经验",
+    "p17_des": "富士拉水肺潜水体验，包括接送 600 迪拉姆"
 }
