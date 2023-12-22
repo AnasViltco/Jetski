@@ -601,7 +601,7 @@ export default function Home() {
                     <p>
                       {t("para2_about")}
                     </p>
-                   
+
                   </div>
                 </div>
               </Element>
@@ -852,7 +852,7 @@ export default function Home() {
                       </div>
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
-                          {t("p5_des")}{t("p6_des")}
+                          {t("p5_des")}
                         </p>
                       </div>
                     </div>
@@ -873,7 +873,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' />{t("Time2")}</small>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
                             </div>
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
@@ -916,7 +916,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' />{t("Time2")}</small>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
                             </div>
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
@@ -959,7 +959,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' />{t("Time2")}</small>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
                             </div>
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
@@ -1002,7 +1002,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' />{t("Time2")}</small>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
                             </div>
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
@@ -1045,7 +1045,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' />{t("Time2")}</small>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
                             </div>
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
@@ -1088,7 +1088,7 @@ export default function Home() {
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' />{t("Time2")}</small>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
                             </div>
                           </div>
                           <div className='col-md-4 bprder_new py-1'>
@@ -1115,6 +1115,209 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className='col-md-4 mt-md-0 mt-4 '>
+                  <div className='col-md-12  pb-4 parent_div'>
+                    <div className='col-md-12'>
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/yacht.jpeg' />
+                    </div>
+                    <div className='col-md-12 bprder_new_r pb-4'>
+                      <div className='col-md-12 px-2'>
+                        <div className='row px-1 '>
+                          <div className='col-md-6 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><IoLocationSharp className='text-green' />  {t("Loc")}</small>
+                            </div>
+                          </div>
+                          <div className='col-md-6 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> -  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <span><FaStar className='text-green' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                      </div>
+                      <div className='col-md-12 text-center px-3 mt-3'>
+                        <p className='m-0 p-0'>
+                          Yacht tour
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4 mt-md-0 mt-4 '>
+                  <div className='col-md-12  pb-4 parent_div'>
+                    <div className='col-md-12'>
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/parasail.jpeg' />
+                    </div>
+                    <div className='col-md-12 bprder_new_r pb-4'>
+                      <div className='col-md-12 px-2'>
+                        <div className='row px-1 '>
+                          <div className='col-md-6 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><IoLocationSharp className='text-green' />  {t("Loc")}</small>
+                            </div>
+                          </div>
+                          <div className='col-md-6 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <span><FaStar className='text-green' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                      </div>
+                      <div className='col-md-12 text-center px-3 mt-3'>
+                        <p className='m-0 p-0'>
+                          Parasailing Single 300aed
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4 mt-md-0 mt-4 '>
+                  <div className='col-md-12  pb-4 parent_div'>
+                    <div className='col-md-12'>
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/fish.jpeg' />
+                    </div>
+                    <div className='col-md-12 bprder_new_r pb-4'>
+                      <div className='col-md-12 px-2'>
+                        <div className='row px-1 '>
+                          <div className='col-md-4 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><IoLocationSharp className='text-green' />  {t("Loc")}</small>
+                            </div>
+                          </div>
+                          <div className='col-md-4 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
+                            </div>
+                          </div>
+                          <div className='col-md-4 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><GiDuration className='text-green' />4 hours</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 1600  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <span><FaStar className='text-green' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                      </div>
+                      <div className='col-md-12 text-center px-3 mt-3'>
+                        <p className='m-0 p-0'>
+                          Including refreshments, soft drinks, and all Fishing equipments
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4 mt-md-0 mt-4 '>
+                  <div className='col-md-12  pb-4 parent_div'>
+                    <div className='col-md-12'>
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/parasail.jpeg' />
+                    </div>
+                    <div className='col-md-12 bprder_new_r pb-4'>
+                      <div className='col-md-12 px-2'>
+                        <div className='row px-1 '>
+                          <div className='col-md-6 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><IoLocationSharp className='text-green' />  {t("Loc")}</small>
+                            </div>
+                          </div>
+                          <div className='col-md-6 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <span><FaStar className='text-green' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                      </div>
+                      <div className='col-md-12 text-center px-3 mt-3'>
+                        <p className='m-0 p-0'>
+                          Parasailing dual 500aed
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4 mt-md-0 mt-4 '>
+                  <div className='col-md-12  pb-4 parent_div'>
+                    <div className='col-md-12'>
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/car.jpeg' />
+                    </div>
+                    <div className='col-md-12 bprder_new_r pb-4'>
+                      <div className='col-md-12 px-2'>
+                        <div className='row px-1 '>
+                          <div className='col-md-4 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><IoLocationSharp className='text-green' />  {t("Loc")}</small>
+                            </div>
+                          </div>
+                          <div className='col-md-4 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
+                            </div>
+                          </div>
+                          <div className='col-md-4 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><GiDuration className='text-green' /> Desert safari </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 150  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <span><FaStar className='text-green' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                      </div>
+                      <div className='col-md-12 text-center px-3 mt-3'>
+                        <p className='m-0 p-0'>
+                          Starting from
+                          150aed
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4 mt-md-0 mt-4 '>
                 </div>
 
 
