@@ -288,7 +288,23 @@ export default function Home() {
             {/* Menu mobile ----------------------------------------------------------------------------------- */}
             <div className='col-md-12 background_header1 menu_mob py-2 px-2'>
               <div className='row'>
-                <div className='col-md-6 col-6'></div>
+                <div className='col-md-6 col-6'>
+                  <span className=''>
+                    <a href='https://www.facebook.com/profile.php?viewas=100000686899395&id=61554693967567' target='_blank'>
+                      <button className='btn btn-outline-light btn-sm rounded-circle'><FaFacebookF /></button>
+                    </a>
+                  </span>
+                  <span className='ms-2'>
+                    <a href='https://www.instagram.com/sunandsea_jetski_dubai/?igshid=YzVkODRmOTdmMw%3D%3D' target='_blank'>
+                      <button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaInstagram /></button>
+                    </a>
+                  </span>
+                  <span className='ms-2'>
+                    <a href='https://www.youtube.com/@sunandsea_jetski_dubai' target='_blank'>
+                      <button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaYoutube /></button>
+                    </a>
+                  </span>
+                </div>
                 <div className='col-md-6 col-6'>
                   <select
                     className="form-select form-select-sm rounded-pill background_white_t"
@@ -758,7 +774,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300<span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Jetski Tour</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300<span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -801,7 +818,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500<span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Jetski Tour</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500<span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -844,7 +862,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 1000 <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Jetski Tour</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 1000 <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -911,7 +930,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Scuba Diving</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -954,7 +974,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 600  <span className='font_size_small_from'>  {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Scuba Diving</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 600  <span className='font_size_small_from'>  {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -997,7 +1018,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 600  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Jetcar Tour</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 600  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -1040,7 +1062,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 800  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Jetcar Tour</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 800  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -1083,7 +1106,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Flyboard </h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -1121,9 +1145,10 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Yacht Tour </h4>
                         {/* <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> -  <span className='font_size_small_from'> {t("Currency")}</span> </h3> */}
                       </div>
-                      <div className='col-md-12 pt-4 mt-4 text-center'>
+                      <div className='col-md-12 pt-2 mt-4 text-center'>
                         <span><FaStar className='text-green' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
@@ -1159,7 +1184,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Parasailing</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -1171,6 +1197,45 @@ export default function Home() {
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
                           {t('p19_des')}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4 mt-md-0 mt-4 '>
+                  <div className='col-md-12  pb-4 parent_div'>
+                    <div className='col-md-12'>
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/bal.jpeg' />
+                    </div>
+                    <div className='col-md-12 bprder_new_r pb-4'>
+                      {/* <div className='col-md-12 px-2'>
+                        <div className='row px-1 '>
+                          <div className='col-md-6 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><IoLocationSharp className='text-green' />  {t("Loc")}</small>
+                            </div>
+                          </div>
+                          <div className='col-md-6 bprder_new py-1'>
+                            <div className='col-md-12 text-center'>
+                              <small><FaClock className='text-green' /> {t("Time")}</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div> */}
+                      <div className='col-md-12 text-center'>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Parasailing</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                      </div>
+                      <div className='col-md-12 text-center'>
+                        <span><FaStar className='text-green' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                      </div>
+                      <div className='col-md-12 text-center px-3 mt-3'>
+                        <p className='m-0 p-0'>
+                          {t("p21_des")}
                         </p>
                       </div>
                     </div>
@@ -1202,9 +1267,10 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Deep See Fishing</h4>
                         {/* <h3 className=' color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 1600  <span className='font_size_small_from'> {t("Currency")}</span> </h3> */}
                       </div>
-                      <div className='col-md-12 text-center pt-4 mt-2'>
+                      <div className='col-md-12 text-center  mt-2'>
                         <span><FaStar className='text-green' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
@@ -1219,44 +1285,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 mt-4 '>
-                  <div className='col-md-12  pb-4 parent_div'>
-                    <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr height_w_img' src='/img/bal.jpeg' />
-                    </div>
-                    <div className='col-md-12 bprder_new_r pb-4'>
-                      {/* <div className='col-md-12 px-2'>
-                        <div className='row px-1 '>
-                          <div className='col-md-6 bprder_new py-1'>
-                            <div className='col-md-12 text-center'>
-                              <small><IoLocationSharp className='text-green' />  {t("Loc")}</small>
-                            </div>
-                          </div>
-                          <div className='col-md-6 bprder_new py-1'>
-                            <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' /> {t("Time")}</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div> */}
-                      <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
-                      </div>
-                      <div className='col-md-12 text-center'>
-                        <span><FaStar className='text-green' /></span>
-                        <span><FaStar className='text-green ms-1' /></span>
-                        <span><FaStar className='text-green ms-1' /></span>
-                        <span><FaStar className='text-green ms-1' /></span>
-                        <span><FaStar className='text-green ms-1' /></span>
-                      </div>
-                      <div className='col-md-12 text-center px-3 mt-3'>
-                        <p className='m-0 p-0'>
-                          {t("p21_des")}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
@@ -1283,7 +1312,8 @@ export default function Home() {
                         </div>
                       </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 150  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Desert Safari</h4>
+                        <h3 className='pt-2 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 150  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
                       <div className='col-md-12 text-center'>
                         <span><FaStar className='text-green' /></span>
@@ -1307,9 +1337,10 @@ export default function Home() {
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 text-center '>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Donut Ride</h4>
                         {/* <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 150  <span className='font_size_small_from'> {t("Currency")}</span> </h3> */}
                       </div>
-                      <div className='col-md-12 text-center pt-4 mt-4'>
+                      <div className='col-md-12 text-center pt-2 mt-4'>
                         <span><FaStar className='text-green' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
@@ -1331,9 +1362,10 @@ export default function Home() {
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 text-center'>
+                        <h4 className='pt-4  m-0 p-0 color_new_text2'>Banana Ride</h4>
                         {/* <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 150  <span className='font_size_small_from'> {t("Currency")}</span> </h3> */}
                       </div>
-                      <div className='col-md-12 text-center mt-4 pt-4'>
+                      <div className='col-md-12 text-center mt-2 pt-4'>
                         <span><FaStar className='text-green' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
