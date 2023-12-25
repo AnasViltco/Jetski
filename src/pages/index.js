@@ -738,7 +738,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/ski.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -756,7 +756,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300<span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -781,7 +781,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/ski2.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -799,7 +799,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500<span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -824,7 +824,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/g26.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -842,7 +842,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 1000 <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -861,31 +861,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className='col-md-4 mt-md-0 mt-4 '>
+                {/* <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
                       <img className='img-fluid img_border_topr height_w_img' src='/img/d1.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
-                        <div className='row px-1 '>
-                          <div className='col-md-4 bprder_new py-1 '>
-                            <div className='col-md-12 text-center'>
-                              <small><IoLocationSharp className='text-green' />  {t("Loc")}</small>
-                            </div>
-                          </div>
-                          <div className='col-md-4 bprder_new py-1'>
-                            <div className='col-md-12 text-center'>
-                              <small><FaClock className='text-green' /> {t("Time")}</small>
-                            </div>
-                          </div>
-                          <div className='col-md-4 bprder_new py-1'>
-                            <div className='col-md-12 text-center'>
-                              <small><GiDuration className='text-green' />4 hours</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 1600 <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -903,14 +884,14 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
                       <img className='img-fluid img_border_topr height_w_img' src='/img/d2.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -928,7 +909,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -953,7 +934,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/d3.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -971,7 +952,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 600  <span className='font_size_small_from'>  {t("Currency")}</span> </h3>
                       </div>
@@ -996,7 +977,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/g17.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -1014,7 +995,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 600  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -1039,7 +1020,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/skicar.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -1057,7 +1038,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 800  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -1082,7 +1063,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/fly.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -1100,7 +1081,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -1125,7 +1106,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/yacht.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-6 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -1138,11 +1119,11 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> -  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        {/* <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> -  <span className='font_size_small_from'> {t("Currency")}</span> </h3> */}
                       </div>
-                      <div className='col-md-12 text-center'>
+                      <div className='col-md-12 pt-4 mt-4 text-center'>
                         <span><FaStar className='text-green' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
@@ -1163,7 +1144,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/parasail.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-6 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -1176,7 +1157,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 300  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -1201,7 +1182,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/fish.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -1219,11 +1200,11 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
-                        <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 1600  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
+                        {/* <h3 className=' color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 1600  <span className='font_size_small_from'> {t("Currency")}</span> </h3> */}
                       </div>
-                      <div className='col-md-12 text-center'>
+                      <div className='col-md-12 text-center pt-4 mt-2'>
                         <span><FaStar className='text-green' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
                         <span><FaStar className='text-green ms-1' /></span>
@@ -1244,7 +1225,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/bal.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-6 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -1257,7 +1238,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 500  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -1282,7 +1263,7 @@ export default function Home() {
                       <img className='img-fluid img_border_topr height_w_img' src='/img/car.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
-                      <div className='col-md-12 px-2'>
+                      {/* <div className='col-md-12 px-2'>
                         <div className='row px-1 '>
                           <div className='col-md-4 bprder_new py-1'>
                             <div className='col-md-12 text-center'>
@@ -1300,7 +1281,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className='col-md-12 text-center'>
                         <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 150  <span className='font_size_small_from'> {t("Currency")}</span> </h3>
                       </div>
@@ -1320,6 +1301,52 @@ export default function Home() {
                   </div>
                 </div>
                 <div className='col-md-4 mt-md-0 mt-4 '>
+                  <div className='col-md-12  pb-4 parent_div'>
+                    <div className='col-md-12'>
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/dount.jpg' />
+                    </div>
+                    <div className='col-md-12 bprder_new_r pb-4'>
+                      <div className='col-md-12 text-center '>
+                        {/* <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 150  <span className='font_size_small_from'> {t("Currency")}</span> </h3> */}
+                      </div>
+                      <div className='col-md-12 text-center pt-4 mt-4'>
+                        <span><FaStar className='text-green' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                      </div>
+                      <div className='col-md-12 text-center px-3 mt-3'>
+                        <p className='m-0 p-0'>
+                          Donut Ride
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-md-4 mt-md-0 mt-4 '>
+                  <div className='col-md-12  pb-4 parent_div'>
+                    <div className='col-md-12'>
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/banana.jpg' />
+                    </div>
+                    <div className='col-md-12 bprder_new_r pb-4'>
+                      <div className='col-md-12 text-center'>
+                        {/* <h3 className='pt-4 color_new_text1 mb-0'><small className='font_size_small_from'>{t("From")}</small> 150  <span className='font_size_small_from'> {t("Currency")}</span> </h3> */}
+                      </div>
+                      <div className='col-md-12 text-center mt-4 pt-4'>
+                        <span><FaStar className='text-green' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                        <span><FaStar className='text-green ms-1' /></span>
+                      </div>
+                      <div className='col-md-12 text-center px-3 mt-3'>
+                        <p className='m-0 p-0'>
+                          Banana Ride
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
 
