@@ -385,7 +385,10 @@ body {
 
 
 @media screen and (max-width: 850px) {
-
+  .img_falg_width_set
+  {
+    width: 46%;
+  }
   .display_pc {
     display: none;
   }

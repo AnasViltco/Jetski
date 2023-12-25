@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { FaAngleRight, FaArrowRight, FaArrowUp, FaClock, FaDollarSign, FaFacebookF, FaInstagram, FaMapMarkerAlt, FaPlane, FaStar, FaUser, FaWhatsapp, FaYoutube } from "react-icons/fa";
-import { IoIosCall } from "react-icons/io";
+import { FaAngleRight, FaArrowRight, FaArrowUp, FaClock, FaDollarSign, FaFacebookF, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaPlane, FaStar, FaUser, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { IoIosCall, IoIosMail } from "react-icons/io";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoLocationSharp, IoMailOpen, IoPeopleSharp } from "react-icons/io5";
 import { TbTimeDuration30, TbTimeDuration5, TbWorld } from "react-icons/tb";
@@ -291,21 +291,21 @@ export default function Home() {
                 <div className='col-md-6 col-6'>
                   <span className=''>
                     <a href='https://www.facebook.com/profile.php?viewas=100000686899395&id=61554693967567' target='_blank'>
-                      <button className='btn btn-outline-light btn-sm rounded-circle'><FaFacebookF /></button>
+                      <button className='btn btn-outline-light btn-md rounded-circle'><FaFacebookF style={{ color: "#0866FF" }} /></button>
                     </a>
                   </span>
                   <span className='ms-2'>
                     <a href='https://www.instagram.com/sunandsea_jetski_dubai/?igshid=YzVkODRmOTdmMw%3D%3D' target='_blank'>
-                      <button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaInstagram /></button>
+                      <button className='btn btn-outline-light btn-md ms-md-2 rounded-circle'><FaInstagram style={{ color: "#F501C0" }} /></button>
                     </a>
                   </span>
                   <span className='ms-2'>
                     <a href='https://www.youtube.com/@sunandsea_jetski_dubai' target='_blank'>
-                      <button className='btn btn-outline-light btn-sm ms-md-2 rounded-circle'><FaYoutube /></button>
+                      <button className='btn btn-outline-light btn-md ms-md-2 rounded-circle'><FaYoutube style={{ color: "#FF0000" }} /></button>
                     </a>
                   </span>
                 </div>
-                <div className='col-md-6 col-6'>
+                <div className='col-md-6 col-6 m-auto'>
                   <select
                     className="form-select form-select-sm rounded-pill background_white_t"
                     aria-label="Select Language"
@@ -1565,7 +1565,7 @@ export default function Home() {
                 </div>
               </Carousel>
             </div>
-            <div className='col-md-12 padding_left_right_custom mb-5 pb-4'>
+            <div className='col-md-12 padding_left_right_custom mb-5 pb-4 display_pc'>
               <div className='d_flex_flag px-3 '>
 
                 <img className='img-fluid width_flag mt-5' src='/img/uae.webp' />
@@ -1578,6 +1578,34 @@ export default function Home() {
 
               </div>
             </div>
+
+            <div className='col-md-12 padding_left_right_custom mb-5 pb-4 display_mob'>
+              <div className='row'>
+                <div className='col-md-6 col-6'>
+                  <img className='img-fluid mt-5' src='/img/uae.webp' />
+                </div>
+                <div className='col-md-6 col-6'>
+                  <img className='img-fluid mt-5' src='/img/pakistan.webp' />
+                </div>
+                <div className='col-md-6 col-6'>
+                  <img className='img-fluid mt-5' src='/img/france.webp' />
+                </div>
+                <div className='col-md-6 col-6'>
+                  <img className='img-fluid mt-5' src='/img/morocco.webp' />
+                </div>
+                <div className='col-md-6 col-6'>
+                  <img className='img-fluid mt-5' src='/img/algeria.webp' />
+                </div>
+                <div className='col-md-6 col-6'>
+                  <img className='img-fluid mt-5' src='/img/tunisia.webp' />
+                </div>
+                <div className='col-md-12 col-12 text-center '>
+                  <img className='img-fluid img_falg_width_set mt-5' src='/img/russia.webp' />
+                </div>
+              </div>
+            </div>
+
+
 
             <div className='col-md-12 text-center'>
               <Element name='test9' >
@@ -1637,7 +1665,17 @@ export default function Home() {
             </div>
             <div className='col-md-12 padding_left_right_custom pt-5 pb-5  bg_footer'>
               <div className='row pt-4'>
-                <div className='col-md-3'>
+                <div className='col-md-3 mt-md-0 mt-3 display_mob'>
+                  <h4 className='text-white'><b>Phone</b></h4>
+
+                  <h6 className='text-white'> <FaPhoneAlt /> +971581986276</h6>
+                  <a href='mailto:sunandseajetski@gmail.com' className='text-white'>
+                  <h6 className='text-white'> <IoIosMail /> sunandseajetski@gmail.com</h6>
+                  </a>
+
+
+                </div>
+                <div className='col-md-3 mt-3 mt-md-0'>
                   <div className='col-md-12'>
                     <h4 className='text-white'><b>Company</b></h4>
                     <Link
@@ -1691,7 +1729,7 @@ export default function Home() {
                   <h4 className='text-white'><b>Contact</b></h4>
                   <Link
                     activeClass="active"
-                    to="test5"
+                    to="test6"
                     spy={true}
                     smooth={true}
                     offset={50}
