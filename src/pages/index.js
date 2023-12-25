@@ -309,11 +309,14 @@ export default function Home() {
             </div>
             <div className='col-md-12 menu_mob py-md-2 px-md-3'>
               <div className='row bg-white py-2 px-3 '>
-                <div className='col-md-6 col-10 m-auto'>
+                <div className='col-md-2 col-2'>
+                  <img className='img-fluid img_width_one' src='/img/logo.webp' />
+                </div>
+                <div className='col-md-6 col-8 m-auto ps-0'>
                   <h1 className='text-green margin_bottom_neg_header'>{t("logo_pc")}</h1>
                   <small className='padding_left_new'><span className='small_dubai text-green '> {t("logo_pc_1")} </span></small>
                 </div>
-                <div className='col-md-6 col-2 text-end'>
+                <div className='col-md-6 col-2 text-end m-auto'>
                   <button className='btn btn-success button_green' onClick={openclosemenu} ><AiOutlineMenu /></button>
                 </div>
               </div>
@@ -732,7 +735,7 @@ export default function Home() {
                 <div className='col-md-4 mt-md-0  '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/ski.webp' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/ski.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -775,7 +778,7 @@ export default function Home() {
                 <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/ski2.webp' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/ski2.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -818,7 +821,7 @@ export default function Home() {
                 <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/ski3.webp' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/g26.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -990,7 +993,7 @@ export default function Home() {
                 <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/skicar.webp' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/g17.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -1033,7 +1036,7 @@ export default function Home() {
                 <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/skicar.webp' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/skicar.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -1076,7 +1079,7 @@ export default function Home() {
                 <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr' src='/img/fly.webp' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/fly.webp' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -1148,7 +1151,7 @@ export default function Home() {
                       </div>
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
-                          Yacht tour
+                          {t("p18_des")}
                         </p>
                       </div>
                     </div>
@@ -1186,7 +1189,7 @@ export default function Home() {
                       </div>
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
-                          Parasailing Single 300aed
+                          {t('p19_des')}
                         </p>
                       </div>
                     </div>
@@ -1229,7 +1232,7 @@ export default function Home() {
                       </div>
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
-                          Including refreshments, soft drinks, and all Fishing equipments
+                          {t("p20_des")}
                         </p>
                       </div>
                     </div>
@@ -1238,7 +1241,7 @@ export default function Home() {
                 <div className='col-md-4 mt-md-0 mt-4 '>
                   <div className='col-md-12  pb-4 parent_div'>
                     <div className='col-md-12'>
-                      <img className='img-fluid img_border_topr height_w_img' src='/img/parasail.jpeg' />
+                      <img className='img-fluid img_border_topr height_w_img' src='/img/bal.jpeg' />
                     </div>
                     <div className='col-md-12 bprder_new_r pb-4'>
                       <div className='col-md-12 px-2'>
@@ -1267,7 +1270,7 @@ export default function Home() {
                       </div>
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
-                          Parasailing dual 500aed
+                          {t("p21_des")}
                         </p>
                       </div>
                     </div>
@@ -1310,8 +1313,7 @@ export default function Home() {
                       </div>
                       <div className='col-md-12 text-center px-3 mt-3'>
                         <p className='m-0 p-0'>
-                          Starting from
-                          150aed
+                          {t("p22_des")}
                         </p>
                       </div>
                     </div>

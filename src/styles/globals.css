@@ -360,20 +360,18 @@ body {
 .form-select {
   color: white !important;
   background-image: url(/img/downaa.webp) !important;
-  
+
 }
 
 .display_mob {
   display: none;
 }
 
-.img_width_one
-{
+.img_width_one {
   width: 120%;
 }
 
-.height_w_img
-{
+.height_w_img {
   height: 270px !important;
   width: 100%;
   object-fit: cover;
@@ -381,7 +379,7 @@ body {
 
 
 @media screen and (max-width: 850px) {
-  
+
   .display_pc {
     display: none;
   }
@@ -451,7 +449,7 @@ body {
   }
 
   .padding_left_new {
-    padding-left: 10%;
+    padding-left: 12%;
     letter-spacing: 5px;
   }
 
@@ -472,15 +470,21 @@ body {
   .color_text_mob_header {
     color: #283747 !important;
   }
+
   .color_white_new {
     font-size: 20px;
     font-weight: 800;
     line-height: 1.2;
     color: white;
   }
+
   .fs-4 {
     font-size: 12px !important;
   }
-  
+
+  .img_width_one {
+    width: 140%;
+  }
+
 
 }
