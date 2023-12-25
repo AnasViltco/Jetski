@@ -291,17 +291,17 @@ export default function Home() {
                 <div className='col-md-6 col-6'>
                   <span className=''>
                     <a href='https://www.facebook.com/profile.php?viewas=100000686899395&id=61554693967567' target='_blank'>
-                      <button className='btn btn-outline-light btn-md rounded-circle'><FaFacebookF style={{ color: "#0866FF" }} /></button>
+                      <button className='btn btn-outline-light btn-md rounded-circle'><FaFacebookF  /></button>
                     </a>
                   </span>
                   <span className='ms-2'>
                     <a href='https://www.instagram.com/sunandsea_jetski_dubai/?igshid=YzVkODRmOTdmMw%3D%3D' target='_blank'>
-                      <button className='btn btn-outline-light btn-md ms-md-2 rounded-circle'><FaInstagram style={{ color: "#F501C0" }} /></button>
+                      <button className='btn btn-outline-light btn-md ms-md-2 rounded-circle'><FaInstagram  /></button>
                     </a>
                   </span>
                   <span className='ms-2'>
                     <a href='https://www.youtube.com/@sunandsea_jetski_dubai' target='_blank'>
-                      <button className='btn btn-outline-light btn-md ms-md-2 rounded-circle'><FaYoutube style={{ color: "#FF0000" }} /></button>
+                      <button className='btn btn-outline-light btn-md ms-md-2 rounded-circle'><FaYoutube /></button>
                     </a>
                   </span>
                 </div>
@@ -1680,7 +1680,7 @@ export default function Home() {
                     <h4 className='text-white'><b>Company</b></h4>
                     <Link
                       activeClass="active"
-                      to="test6"
+                      to="test2"
                       spy={true}
                       smooth={true}
                       offset={50}
